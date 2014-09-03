@@ -1,0 +1,67 @@
+.dropdown-select  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 25px;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#a9a9a9;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'perspective_sansregular', arial;
+    width: 130px;
+}
+.dropdown-select li {
+    position: relative;
+    z-index: 1000;
+    padding: 0 7px;
+    background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.opened li {
+    background-color: #eee;
+    -moz-box-shadow: 0 0 1px #e5e5e5, 0 0 2px #888;
+    box-shadow: 0 0 1px #e5e5e5, 0 0 2px #888;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=120, Color='#e5e5e5'),
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=240, Color='#888');
+    -moz-box-shadow: 1px 1px 0 #5472ea, -1px 1px 0 #5472ea;
+    box-shadow: 1px 1px 0 #5472ea, -1px 1px 0 #5472ea;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=120, Color='#5472ea'),
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=240, Color='#5472ea');
+    border-bottom: 1px solid #e5e5e5;
+}
+.dropdown-select li:hover {
+    cursor: pointer;
+}
+.opened li:hover {
+    background-color: #bbb;
+}
+.dropdown-select li:first-child {
+    background-image: url('../images/arrow-down.png');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+.opened li:first-child {
+    background-image: url('../images/arrow-up.png');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+} 
+.dropdown-select:focus, .dropdown-select li:focus {
+    outline: none;
+    border-color: #5472ea;
+}
+.dropdown-select li:first-of-type {
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+ .dropdown-select li:last-of-type {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    border: none;
+}

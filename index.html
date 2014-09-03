@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Test-Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/dropdown_select.css">
+		<!--[if (IE 7)|(IE 8)]|(IE 9)]>
+			<link rel="stylesheet" type="text/css" href="css/ie7-9.css">
+		<![endif]-->
+		<script src="js/jQuery.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="js/dropdown_select.js"></script>
+		<script type="text/javascript" src="js/form_validator.js"></script>
+	</head>
+	<body>
+		<div class="form-out-border">
+			<div class="form">
+				<form name="test-form" method="post" action="#">
+					<p><strong>Sign up Form</strong></p>
+					<div class="row">
+						<input type="text" maxlength="25" size="40" placeholder="Name" class="input-name" tabindex="1">
+					</div>
+					<div class="row">
+						<input type="text" maxlength="25" size="40" placeholder="E-mail" class="input-mail" tabindex="2">
+					<select name="email-domain" size="1" class="dropdown-select" tabindex="3">
+						<option selected="selected" value="s1" tabindex="4">@inbox.1</option>
+						<option value="s2" tabindex="5">@inbox.2</option>
+						<option value="s3" tabindex="6">@inbox.3</option>
+						<option value="s4">@inbox.4</option>
+						<option value="s5">@inbox.5</option>
+					</select>
+					</div>
+					<div class="row">
+						<input type="password" placeholder="Password" maxlength="15" size="40" name="pass" class="input-pass" tabindex="7">
+					</div>
+					<div class="row__before-button">
+						<input type="password" placeholder="Confirm password" maxlength="15" size="40" name="confirm-pass" class="input-confpass" tabindex="8">
+					</div>
+					<input type="submit" value="Sign Up" class="submit-button" tabindex="9">
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			jQuery(function(){
+				jQuery('select.dropdown-select').dropdownSelect()
+			});
+		</script>
+	</body>
+</html>

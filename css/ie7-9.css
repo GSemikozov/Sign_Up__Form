@@ -1,0 +1,23 @@
+input, select {
+	height: 25px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*
+* Other styles
+*/
+.form-out-border {
+	*overflow: inherit;
+}
+.form {
+	*border: 1px solid #000;
+}
+.dropdown-select  {
+    *top: 2%;
+}
+.input-mail {
+	width: 242px;
+	*width: 250px;
+}
